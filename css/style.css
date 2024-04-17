@@ -1,3 +1,85 @@
-h1 {
-  color: pink;
+.body{
+ 
+  align-items: center;
+  justify-content: center;
+ height: 100vh;
 }
+
+.ticTacToeBoard{
+  display: flex;
+  border: 30px solid pink;
+  height: 100vw;
+  width: 100vw;
+  justify-content: space-evenly;
+  background-color: aqua;
+  flex-direction: column;
+  
+}
+
+.theRow{
+justify-content: space-evenly;
+display: flex;
+  
+  height: 33.34%;
+  width: 100%;
+
+}
+
+.square{
+  background-color: green;
+  height: 100%;
+  width: 100%;
+  border: 5px solid black
+}
+
+
+
+/* #upLeft{
+  background-color: white;
+  border-right:  solid black 1px;
+  border-bottom: solid black 1px;
+  
+}
+
+#upMid{
+  background-color: white;
+  
+}
+
+#upRight{
+  background-color: white;
+  border-left: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#midLeft{
+  background-color: white;
+  
+}
+
+#midMid{
+  background-color: white;
+  border: solid black 1px;
+   border-width: 5px; 
+}
+
+#midRight{
+  background-color: white;
+  
+}
+
+#botLeft{
+  background-color: white;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+}
+
+#botMid{
+  background-color: white;
+  
+}
+
+#botRight{background-color:white;
+ border-left: solid black 1px;
+ border-top: solid black 1px; 
+} */
