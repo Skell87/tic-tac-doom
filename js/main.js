@@ -1,17 +1,20 @@
-let player = 1
-const boxes = document.querySelectorAll(".square")
-console.log(boxes)
 
-// const winCondition = [
-//     [box0, box1, box2],
-//     [box3, box4, box5],
-//     [box6, box7, box8], 
-//     [box0, box3, box6],
-//     [box1, box4, box7],
-//     [box2, box5, box8],
-//     [box0, box4, box8],
-//     [box2, box4, box6]
-// ]
+let player = 1
+
+const boxes = document.querySelectorAll(".square")
+
+
+const winConditions = [
+    [box0, box1, box2],
+    [box3, box4, box5],
+    [box6, box7, box8], 
+    [box0, box3, box6],
+    [box1, box4, box7],
+    [box2, box5, box8],
+    [box0, box4, box8],
+    [box2, box4, box6]
+]
+
 
 for (let i = 0; i < boxes.length; i++){
     boxes[i].addEventListener('click', addChar)
@@ -35,17 +38,26 @@ function addChar(event){
             player = 1
         }
         
+        for (let j = 0; j < winConditions.length; j++){
+            let winCondition = winConditions[j];
+            console.log({winCondition, j})
+            let a = winCondition[0].innerText
+            let b = winCondition[1].innerText
+            let c = winCondition[2].innerText
+
+            console.log("a", a)
+            console.log("b", b)
+            console.log("c", c)
+
+            if(a === '' || b === '' || c === '') continue;
+
+            if (a === b && b === c){
+                alert("game won")
+            }
+        }
     }else{
         alert("NO!!")
-    }
-    
+    }  
 }
 
-const box0 = document.getElementById("box0")
-console.log("box 0 =", box0)
-box0.addEventListener("click", addChar)
-
-document.getElementById("box1").addEventListener("click", addChar)
-
-
-// i want the click to add an x or o based on player number. current player is 1
+document.getElementById("resetButton")
