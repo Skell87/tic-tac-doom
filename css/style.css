@@ -5,6 +5,11 @@
  height: 100vh;
 }
 
+.mainMenu{
+  text-align: center;
+  font-size:xx-large;
+}
+
 .ticTacToeBoard{
   display: flex;
   border: 30px solid pink;
@@ -31,55 +36,3 @@ display: flex;
   width: 100%;
   border: 5px solid black
 }
-
-
-
-/* #upLeft{
-  background-color: white;
-  border-right:  solid black 1px;
-  border-bottom: solid black 1px;
-  
-}
-
-#upMid{
-  background-color: white;
-  
-}
-
-#upRight{
-  background-color: white;
-  border-left: solid black 1px;
-  border-bottom: solid black 1px;
-}
-
-#midLeft{
-  background-color: white;
-  
-}
-
-#midMid{
-  background-color: white;
-  border: solid black 1px;
-   border-width: 5px; 
-}
-
-#midRight{
-  background-color: white;
-  
-}
-
-#botLeft{
-  background-color: white;
-  border-top: solid black 1px;
-  border-right: solid black 1px;
-}
-
-#botMid{
-  background-color: white;
-  
-}
-
-#botRight{background-color:white;
- border-left: solid black 1px;
- border-top: solid black 1px; 
-} */
